@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f3dfb9">
+<meta name="description" content="Премиальные натуральные лакомства для собак — Лакомство от Милли">
+<title>Лакомство от Милли — натуральные лакомства для собак</title>
+<style>
+:root{--cream:#fbf1df;--paper:#f2dfbd;--brown:#482611;--brown2:#6a3e20;--gold:#bd8b4d;--line:#d1a568;--ink:#432611}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:16px}
+body{margin:0;color:var(--ink);background:radial-gradient(ellipse at top,#fff8e9 0,#f4e2c2 60%,#ead0a5 100%);font-family:Georgia,'Times New Roman',serif}
+a{color:inherit}.wrap{max-width:1440px;margin:auto;padding:0 22px}
+.top{padding:22px 0 12px;text-align:center;border-bottom:1px solid #c99b61}
+.brand{display:flex;align-items:center;justify-content:center;gap:22px}.brand img{width:100px;height:100px;object-fit:cover;border-radius:50%;mix-blend-mode:multiply}
+.brand h1{font-size:clamp(30px,5vw,62px);letter-spacing:.045em;line-height:.95;margin:0;text-transform:uppercase}
+.brand p{font-size:clamp(12px,1.6vw,21px);letter-spacing:.18em;margin:12px 0 0}
+.quality{display:inline-block;border:1px solid var(--gold);border-radius:24px;padding:6px 18px;margin-top:12px;font-size:13px;letter-spacing:.13em}
+.tagline{margin:12px 0 0;color:#80552f;font-style:italic}
+.nav{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;padding:17px 0}.nav a{color:#fff3dc;text-decoration:none;background:var(--brown);padding:10px 15px;border-radius:30px;font-size:14px;transition:.2s}.nav a:hover,.btn:hover{background:#80512a;transform:translateY(-1px)}
+.layout{display:grid;grid-template-columns:220px 1fr;gap:20px;align-items:start}
+.side{background:linear-gradient(150deg,#482611,#321908);color:#f8e5c3;border-radius:16px;padding:18px 13px;display:flex;flex-direction:column;gap:7px;position:sticky;top:12px}
+.side a{color:inherit;text-decoration:none;padding:11px 12px;border-radius:10px;font-size:15px}.side a:hover{background:#714726}.side .motto{margin-top:16px;text-align:center;color:#d7a35f;font-style:italic;font-size:19px;line-height:1.5}
+.content{border:1px solid var(--line);border-radius:17px;padding:20px;background:#fff3dc80;min-width:0}
+.intro{display:flex;justify-content:space-between;gap:15px;align-items:end;margin-bottom:20px}.intro h2{margin:0;font-size:clamp(22px,2.6vw,32px);letter-spacing:.04em}.intro p{margin:7px 0 0;color:#79512e}
+.search{width:min(100%,300px);padding:11px 14px;border:1px solid #c99a61;border-radius:24px;background:#fff7e8;color:var(--ink);font:inherit}
+.category{margin:26px 0 30px;scroll-margin-top:18px}.category:first-of-type{margin-top:0}
+.cat-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}.cat-head h3{margin:0;background:var(--brown);color:#fff0d3;padding:11px 17px;border-radius:30px;font-weight:normal;font-size:clamp(15px,1.8vw,21px);letter-spacing:.035em;flex:1}.cat-head span{font-size:13px;color:#80552f;white-space:nowrap}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.card{cursor:pointer;transition:transform .18s,box-shadow .18s;border:1px solid var(--line);border-radius:15px;overflow:hidden;background:#fff5e3;box-shadow:0 4px 14px #6b3c1710;display:flex;flex-direction:column;min-width:0}
+.card:hover{transform:translateY(-2px);box-shadow:0 7px 20px #6b3c1720}.card img{width:100%;height:190px;object-fit:cover;display:block;background:#ead3ac}
+.cardbody{padding:13px 14px 14px;display:flex;flex-direction:column;flex:1}.card h4{margin:0;font-size:18px;line-height:1.2;font-weight:normal}.desc{margin:8px 0 12px;line-height:1.4;color:#76512f;font-size:14px;min-height:39px}
+.price-row{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-top:auto}.price{font-size:23px;font-weight:bold;white-space:nowrap}.weight{font-size:13px;color:#80552f}
+.controls{display:flex;gap:8px;align-items:center;margin-top:12px}.qty{display:flex;align-items:center;border:1px solid #c99a61;border-radius:24px;overflow:hidden;flex-shrink:0}.qty button{border:0;background:transparent;color:var(--brown);width:30px;height:34px;font-size:19px;cursor:pointer}.qty span{min-width:23px;text-align:center}.btn{border:0;background:var(--brown);color:#fff0d3;padding:11px 13px;border-radius:24px;cursor:pointer;font:inherit;transition:.2s}.add{flex:1;font-size:14px;white-space:nowrap}
+.empty-result{display:none;padding:18px;text-align:center;color:#80552f}.cartbox{margin-top:20px;border:1px dashed var(--gold);border-radius:14px;padding:16px;display:none}.cartbox h3{margin:0 0 10px}.cartline{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid #e5c99e}.cartline:last-child{border-bottom:0}.remove{border:0;background:transparent;color:#8b4a20;cursor:pointer;font:inherit}.cart-total{font-size:21px;font-weight:bold;text-align:right;margin-top:12px}
+.footer{margin:22px 0 30px;background:var(--brown);color:#f7dfb5;border-radius:14px;padding:20px;display:flex;justify-content:space-around;align-items:center;gap:16px;flex-wrap:wrap;text-align:center}.footer strong{display:block;font-size:16px;font-weight:normal}.footer small{display:block;margin-top:5px;color:#e7c28d}
+.cartbar{position:sticky;bottom:10px;margin:18px auto 0;width:max-content;max-width:100%;display:flex;align-items:center;gap:16px;padding:10px 12px 10px 18px;border-radius:40px;background:#2e190b;color:#fff0d3;box-shadow:0 8px 28px #4a281344;z-index:5}.cartbar button{background:#f0d4a5;color:#432611;border:0;border-radius:30px;padding:10px 18px;font:inherit;cursor:pointer}.modal-backdrop{position:fixed;inset:0;background:#241307b8;display:none;align-items:center;justify-content:center;padding:18px;z-index:1000}.modal-backdrop.open{display:flex}.product-modal{width:min(100%,900px);max-height:90vh;overflow:auto;background:linear-gradient(135deg,#fffaf0,#f4e2c3);border:1px solid var(--gold);border-radius:22px;padding:28px;box-shadow:0 24px 80px #0006;position:relative}.modal-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start}.modal-photo-wrap{position:sticky;top:0}.modal-photo{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;border:1px solid #d9b984;box-shadow:0 10px 28px #59371b20;background:#ead3ac}.modal-photo-caption{font-size:12px;color:#946a3b;letter-spacing:.12em;text-transform:uppercase;margin:12px 2px}.modal-info{padding:8px 2px}.modal-info h2{font-size:clamp(25px,3vw,36px);line-height:1.12;margin:10px 36px 12px 0}.modal-info h3{font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin:24px 0 12px;color:#80552f;display:flex;align-items:center;gap:10px}.modal-info h3:after{content:'';height:1px;flex:1;background:linear-gradient(90deg,#bd8b4d,transparent)}.composition{background:linear-gradient(135deg,#f8e8cb,#fff7e8);border:1px solid #e6c99c;border-radius:14px;padding:18px;line-height:1.8;font-size:16px}.modal-price-line{font-size:19px;margin:18px 0}.modal-gold-line{height:1px;background:linear-gradient(90deg,#bd8b4d,transparent);margin:20px 0}.modal-label{display:inline-block;background:#ead0a5;color:#68421f;padding:6px 11px;border-radius:20px;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.product-modal h2{margin:0 36px 8px 0;font-size:26px}.product-modal .modal-category{font-size:12px;letter-spacing:.08em;color:#80552f}.product-modal .modal-desc{line-height:1.55}.product-modal .composition{background:linear-gradient(145deg,#fffaf0,#f5e4c7);border:1px solid #dfbf8b;border-radius:16px;padding:18px;line-height:1.55;display:flex;flex-wrap:wrap;gap:8px;box-shadow:inset 0 1px 0 #fff9}.ingredient-chip{display:inline-flex;align-items:center;gap:7px;padding:8px 11px;border:1px solid #e4c99e;border-radius:999px;background:#fffaf0;color:#55331a;font-size:14px;box-shadow:0 2px 6px #5d39100a}.ingredient-chip:before{content:'✦';color:#b8894c;font-size:10px}.composition-empty{line-height:1.6;color:#80552f;font-style:italic}.modal-close{position:absolute;right:13px;top:12px;border:0;background:var(--brown);color:#fff0d3;border-radius:50%;width:34px;height:34px;font-size:20px;cursor:pointer}.card-hint{font-size:11px;color:#956a3d;margin-top:9px;text-align:center}.notice{font-size:13px;color:#78502e;text-align:center;margin:15px 0 0}
+@media(max-width:1050px){.layout{grid-template-columns:1fr}.side{position:static;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;padding:9px}.side a{font-size:13px;padding:8px}.side .motto{display:none}.products{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.product-modal{padding:16px;border-radius:17px}.modal-layout{grid-template-columns:1fr;gap:12px}.modal-photo-wrap{position:static}.modal-photo{aspect-ratio:16/10}.modal-info{padding:0}.modal-info h2{font-size:25px}.composition{font-size:14px;padding:13px}.wrap{padding:0 11px}.brand{gap:10px}.brand img{width:66px;height:66px}.brand p{letter-spacing:.07em}.quality{font-size:9px;padding:5px 8px}.brand h1{font-size:27px}.tagline{font-size:13px}.nav{gap:6px}.nav a{padding:9px 11px;font-size:12px}.content{padding:12px}.intro{align-items:stretch;flex-direction:column}.search{width:100%}.cat-head{align-items:flex-start;flex-direction:column}.cat-head h3{width:100%;font-size:15px}.cat-head span{padding-left:6px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.card img{height:132px}.cardbody{padding:10px}.card h4{font-size:15px}.desc{font-size:12px;min-height:54px;margin:7px 0 10px}.price{font-size:18px}.weight{font-size:11px}.controls{gap:4px;flex-wrap:wrap}.qty{flex:1;justify-content:space-between}.qty button{width:26px;height:30px}.add{width:100%;flex:auto;font-size:12px;padding:9px}.footer{font-size:13px}.cartbar{gap:8px;padding:8px 9px 8px 12px;font-size:12px}.cartbar button{font-size:12px;padding:9px 11px}.cartline{font-size:13px}}
+</style>
+</head>
+<body id="top">
+<header class="top"><div class="wrap">
+  <div class="brand"><img src="assets/logo.jpg" alt="Логотип Лакомство от Милли"><div><h1>Лакомство от Милли</h1><p>НАТУРАЛЬНЫЕ ЛАКОМСТВА ДЛЯ СОБАК</p><div class="quality">❧ &nbsp; ХОЛИСТИК КАЧЕСТВО &nbsp; ❧</div></div></div>
+  <p class="tagline">Вкусные и полезные лакомства — забота в каждом кусочке ♡</p>
+  <nav class="nav"><a href="#catalog">Каталог</a><a href="#training">Дрессировка</a><a href="#sausages">Колбаски</a><a href="#dried">Сушёные лакомства</a><a href="#pates">Паштеты</a><a href="#ration">Основной рацион</a><a href="#contact">Контакты</a></nav>
+</div></header>
+<main class="wrap layout">
+<aside class="side">
+<a href="#top">⌂ &nbsp; Главная</a><a href="#catalog">▦ &nbsp; Все товары</a><a href="#training">🎓 &nbsp; Дрессировка</a><a href="#sausages">🥩 &nbsp; Колбаски</a><a href="#dried">🦴 &nbsp; Сушёные лакомства</a><a href="#pates">🥣 &nbsp; Паштеты</a><a href="#ration">🍖 &nbsp; Основной рацион</a><a href="#cart">🛒 &nbsp; Корзина</a><a href="#contact">☎ &nbsp; Контакты</a>
+<div class="motto">Натуральные<br>ингредиенты ♡<br><span style="font-size:45px">🐕</span><br>Для любимых питомцев</div>
+</aside>
+<section class="content" id="catalog">
+<div class="intro"><div><h2>🐾 Каталог лакомств</h2><p>Подберите угощение для своего хвостатого друга</p></div><input class="search" id="search" type="search" placeholder="Найти лакомство…" aria-label="Поиск товаров"></div>
+<div id="catalog-sections"></div><p class="empty-result" id="empty-result">Ничего не найдено. Попробуйте другое название.</p>
+<div class="cartbox" id="cart"><h3>🛒 Ваша корзина</h3><div id="cart-lines"></div><div class="cart-total" id="cart-grand-total">Итого: 0 ₽</div><button class="btn" onclick="checkout()" style="margin-top:12px;width:100%">Оформить заказ в Telegram ↗</button></div>
+<p class="notice">Натуральные лакомства для собак с заботой от Милли ♡</p>
+</section></main>
+<section class="wrap" id="about"><div class="footer"><div><strong>♧ Натуральные ингредиенты</strong><small>Вкусные угощения для собак</small></div><div><strong>✧ Внимание к качеству</strong><small>Забота в каждом кусочке</small></div><div><strong>🐾 Для любимых питомцев</strong><small>С любовью от Милли</small></div></div></section>
+<footer class="wrap" id="contact"><div class="footer"><div><strong>Заказ и консультация</strong><small>Telegram: @lakomstvootmilli</small></div><div><strong>Спасибо, что выбираете нас! ♡</strong><small>Лакомство от Милли</small></div></div></footer>
+<div class="modal-backdrop" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="if(event.target===this)closeProductModal()"><div class="product-modal"><button class="modal-close" type="button" aria-label="Закрыть" onclick="closeProductModal()">×</button><div class="modal-layout"><div class="modal-photo-wrap"><img class="modal-photo" id="modal-photo" src="" alt="Фото продукции"><div class="modal-photo-caption">Лакомство от Милли · натуральный вкус</div></div><div class="modal-info"><span class="modal-label">Натуральный продукт</span><div class="modal-category" id="modal-category"></div><h2 id="modal-title"></h2><p class="modal-desc" id="modal-desc"></p><div class="modal-price-line"><strong id="modal-price"></strong> <span style="color:#80552f;font-size:14px">· <span id="modal-weight"></span></span></div><div class="modal-gold-line"></div><h3>Состав продукта</h3><div class="composition" id="modal-composition"></div><p class="notice">С любовью и заботой о вашем питомце ♡</p></div></div></div></div>
+<div class="cartbar"><span>🛒 <b id="cart-count">0</b> шт. · <b id="cart-total">0 ₽</b></span><button onclick="checkout()">Заказать в Telegram ↗</button></div>
+<script>
+const categories=[
+{id:'training',title:'ДРЕССИРОВКА',note:'200 г · маленькие угощения для поощрения',items:[
+{id:'turkey-training',name:'Индейка',price:1400,weight:'200 г',img:'training-turkey.jpg',desc:'Небольшие кусочки с индейкой для поощрения во время обучения.',composition:''},
+{id:'rabbit-training',name:'Кролик',price:2400,weight:'200 г',img:'training-rabbit.jpg',desc:'Маленькие угощения с кроликом для тренировок и прогулок.'},
+{id:'fish-training',name:'Рыбное ассорти',price:2800,weight:'200 г',img:'training-fish.jpg',desc:'Хрустящие печенья в виде рыбок — вкусная награда для собак.',composition:'Треска, минтай, форель, перепелиные яйца, овсянка.'}]},
+{id:'sausages',title:'КОЛБАСКИ',note:'100 г · натуральные мясные угощения',items:[
+{id:'veggie-turkey',name:'Овощной микс с индейкой',price:700,weight:'100 г',img:'sausages.jpg',desc:'Колбаски с индейкой и овощным миксом для разнообразия угощений.',composition:'Филе индейки, морковь, тыква, кабачок.'},
+{id:'meat-mix',name:'Мясной микс (индейка + печень)',price:700,weight:'100 г',img:'sausages.jpg',desc:'Мясные колбаски с индейкой и печенью для собак.',composition:'Филе индейки, говяжья печень, морковь, цукини, тыква.'},
+{id:'tasting-set',name:'Дегустационный сет',price:700,weight:'100 г',img:'sausages.jpg',desc:'Ассорти колбасок, чтобы попробовать разные вкусы.'}]},
+{id:'dried',title:'СУШЁНЫЕ ЛАКОМСТВА',note:'100 г · мясные кусочки для жевания',items:[
+{id:'dried-tongue',name:'Сушёный язык',price:1000,weight:'100 г',img:'dried.jpg',desc:'Сушёные мясные кусочки с плотной текстурой для собак.'},
+{id:'tongue-hearts',name:'Говяжий язык и сердечки сушенные',price:1000,weight:'100 г',img:'dried.jpg',desc:'Ассорти из сушёного говяжьего языка и сердечек.'}]},
+{id:'pates',title:'ПАШТЕТЫ',note:'Нежная текстура · два размера на выбор',items:[
+{id:'rabbit-pate-190',name:'Паштет «Кролик»',price:668,weight:'190 г',img:'pate.jpg',desc:'Нежный паштет для собак с кроликом.',variant:'190 г',composition:'Филе кролика, морковь, цукини, рис.'},
+{id:'rabbit-pate-250',name:'Паштет «Кролик»',price:880,weight:'250 г',img:'pate.jpg',desc:'Нежный паштет для собак с кроликом.',variant:'250 г',composition:'Филе кролика, морковь, цукини, рис.'},
+{id:'turkey-pate-190',name:'Паштет «Индейка»',price:668,weight:'190 г',img:'pate.jpg',desc:'Нежный паштет для собак с индейкой.',variant:'190 г',composition:'Филе индейки, печень индейки, морковь, яблоко, брокколи, гречка.'},
+{id:'turkey-pate-250',name:'Паштет «Индейка»',price:880,weight:'250 г',img:'pate.jpg',desc:'Нежный паштет для собак с индейкой.',variant:'250 г',composition:'Филе индейки, печень индейки, морковь, яблоко, брокколи, гречка.'}]},
+{id:'ration',title:'ОСНОВНОЙ РАЦИОН',note:'100 г · варианты для ежедневного меню',items:[
+{id:'diet-turkey',name:'Диетическая индейка',price:200,weight:'100 г',img:'ration-turkey.jpg',desc:'Готовый мясной рацион в стиле домашнего рагу для собак.'},
+{id:'beef-tongue',name:'Говяжий язык',price:433,weight:'100 г',img:'ration-stew.jpg',desc:'Готовое мясное блюдо для собак с говяжьим языком.'},
+{id:'fish-ration',name:'Рыбное ассорти',price:335,weight:'100 г',img:'ration-fish.jpg',desc:'Готовый рацион с рыбой в стиле аппетитного рагу для собак.'},
+{id:'rabbit-hypo',name:'Гипоаллергенный кролик',price:300,weight:'100 г',img:'ration-rabbit.jpg',desc:'Готовое блюдо с кроликом для ежедневного рациона собак.'}]}
+];
+const allProducts=categories.flatMap(c=>c.items.map(p=>({...p,category:c.title})));
+const quantities={},cart={};allProducts.forEach(p=>quantities[p.id]=1);
+const fmt=n=>n.toLocaleString('ru-RU')+' ₽';
+function renderCatalog(query=''){
+ const root=document.getElementById('catalog-sections');root.innerHTML='';let visible=0;
+ categories.forEach(cat=>{
+  const items=cat.items.filter(p=>(p.name+' '+p.desc+' '+cat.title).toLowerCase().includes(query.toLowerCase()));
+  if(!items.length)return;visible+=items.length;
+  const section=document.createElement('section');section.className='category';section.id=cat.id;
+  section.innerHTML=`<div class="cat-head"><h3>${cat.title}</h3><span>${cat.note}</span></div><div class="products"></div>`;
+  const grid=section.querySelector('.products');
+  items.forEach(p=>{
+   const card=document.createElement('article');card.className='card';
+   card.innerHTML=`<img src="assets/${p.img}" alt="${p.name} — лакомство для собак" loading="lazy"><div class="cardbody"><h4>${p.name}</h4><p class="desc">${p.desc}</p><div class="price-row"><span class="price">${fmt(p.price)}</span><span class="weight">${p.weight}</span></div><div class="controls"><div class="qty"><button type="button" aria-label="Уменьшить количество" onclick="changeQty('${p.id}',-1)">−</button><span id="qty-${p.id}">1</span><button type="button" aria-label="Увеличить количество" onclick="changeQty('${p.id}',1)">+</button></div><button class="btn add" type="button" onclick="addToCart('${p.id}')">В корзину</button></div></div>`;
+   card.setAttribute('tabindex','0');card.setAttribute('role','button');card.setAttribute('aria-label',p.name+' — посмотреть состав');card.innerHTML += '<div class="card-hint">Нажмите, чтобы посмотреть состав ↗</div>';card.addEventListener('click',e=>{if(e.target.closest('.controls'))return;showProductDetails(p,cat.title)});card.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&!e.target.closest('.controls')){e.preventDefault();showProductDetails(p,cat.title)}});grid.appendChild(card);
+  });
+  root.appendChild(section);
+ });
+ document.getElementById('empty-result').style.display=visible?'none':'block';
+}
+function showProductDetails(p,category){
+ document.getElementById('modal-photo').src='assets/'+p.img;
+ document.getElementById('modal-photo').alt=p.name+' — фото продукции';
+ document.getElementById('modal-category').textContent=category;
+ document.getElementById('modal-title').textContent=p.name;
+ document.getElementById('modal-desc').textContent=p.desc||'';
+ document.getElementById('modal-price').textContent=fmt(p.price);
+ document.getElementById('modal-weight').textContent=p.weight;
+ const compositionEl=document.getElementById('modal-composition');
+ const ingredients=(p.composition||'').split(',').map(x=>x.trim()).filter(Boolean);
+ if(ingredients.length){
+  compositionEl.classList.remove('composition-empty');
+  compositionEl.innerHTML=ingredients.map(item=>`<span class="ingredient-chip">${item.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</span>`).join('');
+ }else{
+  compositionEl.classList.add('composition-empty');
+  compositionEl.textContent='Точный полный состав для этого товара пока не добавлен. Чтобы указать ингредиенты без ошибок, внесите состав с упаковки или от производителя.';
+ }
+ const modal=document.getElementById('product-modal');modal.classList.add('open');document.body.style.overflow='hidden';document.querySelector('.modal-close').focus();
+}
+function closeProductModal(){document.getElementById('product-modal').classList.remove('open');document.body.style.overflow=''}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeProductModal()});
+function changeQty(id,d){quantities[id]=Math.max(1,Math.min(99,(quantities[id]||1)+d));const el=document.getElementById('qty-'+id);if(el)el.textContent=quantities[id]}
+function addToCart(id){cart[id]=(cart[id]||0)+quantities[id];renderCart();const b=document.querySelector(`[onclick="addToCart('${id}')"]`);if(b){const old=b.textContent;b.textContent='Добавлено ✓';setTimeout(()=>{b.textContent=old},1000)}}
+function renderCart(){
+ let count=0,total=0,lines='';allProducts.forEach(p=>{const q=cart[p.id]||0;if(q){count+=q;total+=q*p.price;lines+=`<div class="cartline"><span>${p.name} (${p.weight}) × ${q}</span><span>${fmt(q*p.price)} <button class="remove" onclick="removeFromCart('${p.id}')" aria-label="Удалить ${p.name}">✕</button></span></div>`}});
+ document.getElementById('cart-count').textContent=count;document.getElementById('cart-total').textContent=fmt(total);document.getElementById('cart-grand-total').textContent='Итого: '+fmt(total);document.getElementById('cart-lines').innerHTML=lines||'<p>Корзина пока пуста.</p>';document.getElementById('cart').style.display=count?'block':'none';
+}
+function removeFromCart(id){delete cart[id];renderCart()}
+function checkout(){const selected=allProducts.filter(p=>cart[p.id]);if(!selected.length){alert('Сначала добавьте товары в корзину.');return}let total=0;const lines=['Здравствуйте! Хочу заказать лакомства для собаки:'];selected.forEach(p=>{const q=cart[p.id];total+=q*p.price;lines.push('• '+p.name+' ('+p.weight+') — '+q+' шт. × '+fmt(p.price))});lines.push('Итого: '+fmt(total));window.open('https://t.me/lakomstvootmilli?text='+encodeURIComponent(lines.join('\\n')),'_blank','noopener')}
+document.getElementById('search').addEventListener('input',e=>renderCatalog(e.target.value));renderCatalog();renderCart();
+</script>
+</body></html>
